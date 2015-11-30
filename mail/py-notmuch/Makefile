@@ -10,7 +10,8 @@ PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 MAINTAINER=	geier@lostpackets.de
 COMMENT=	Python bindings for notmuch
 
-LICENSE=	GPLv3
+LICENSE=	GPLv3 # or later
+LICENSE_FILE=	${WRKSRC}/COPYING-GPL-3
 
 LIB_DEPENDS=	libnotmuch.so.4.2.0:${PORTSDIR}/mail/notmuch
 
