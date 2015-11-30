@@ -29,7 +29,7 @@ PLIST_FILES=	share/zsh/site-functions/_alot
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/zsh/site-functions
-	${MV} ${WRKSRC}/extra/completion/alot-completion.zsh \
+	${INSTALL_SCRIPT} ${WRKSRC}/extra/completion/alot-completion.zsh \
 		${STAGEDIR}${PREFIX}/share/zsh/site-functions/_alot
 
 .include <bsd.port.mk>
