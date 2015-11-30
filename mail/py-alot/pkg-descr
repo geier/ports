@@ -1,0 +1,5 @@
+Alot is an experimental terminal MUA based on notmuch mail. It is written in
+python using the urwid toolkit.
+
+
+WWW: https://github.com/pazz/alot
