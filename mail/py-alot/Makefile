@@ -25,11 +25,11 @@ GH_ACCOUNT=	pazz
 USES=		python
 USE_PYTHON=	autoplist distutils
 
-PLIST_FILES=	share/zsh/site-functions/alot-completion.zsh
+PLIST_FILES=	share/zsh/site-functions/_alot
 
 post-install:
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/zsh/site-functions
-	${INSTALL_DATA} ${WRKSRC}/extra/completion/alot-completion.zsh \
-		${STAGEDIR}${PREFIX}/share/zsh/site-functions
+	${MV} ${WRKSRC}/extra/completion/alot-completion.zsh \
+		${STAGEDIR}${PREFIX}/share/zsh/site-functions/_alot
 
 .include <bsd.port.mk>
