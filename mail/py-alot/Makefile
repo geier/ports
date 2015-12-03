@@ -22,7 +22,7 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}notmuch>=0.13:${PORTSDIR}/mail/py-notmuch \
 USE_GITHUB=	yes
 GH_ACCOUNT=	pazz
 
-USES=		python
+USES=		python:2
 USE_PYTHON=	autoplist distutils
 
 PLIST_FILES=	share/zsh/site-functions/_alot
