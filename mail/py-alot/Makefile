@@ -6,7 +6,7 @@ CATEGORIES=	mail python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	geier@lostpackets.de
-COMMENT=	Command line mail client
+COMMENT=	Terminal MUA using notmuch mail
 
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKSRC}/COPYING
