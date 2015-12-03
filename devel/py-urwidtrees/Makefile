@@ -6,7 +6,7 @@ CATEGORIES=	devel python
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	geier@lostpackets.de
-COMMENT=	Tree widgets for py-urwid
+COMMENT=	Tree widgets for urwid
 
 LICENSE=	GPLv3
 
