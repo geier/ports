@@ -8,7 +8,7 @@ MASTER_SITES=	http://notmuchmail.org/releases/
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	geier@lostpackets.de
-COMMENT=	Python bindings for notmuch
+COMMENT=	Python binding of the notmuch mail search and indexing library
 
 LICENSE=	GPLv3 # or later
 LICENSE_FILE=	${WRKSRC}/../../COPYING-GPL-3
