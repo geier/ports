@@ -3,6 +3,7 @@
 PORTNAME=	alot
 PORTVERSION=	0.3.6
 CATEGORIES=	mail python
+MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	geier@lostpackets.de
@@ -18,9 +19,6 @@ RUN_DEPENDS=	${PYTHON_PKGNAMEPREFIX}notmuch>=0.13:${PORTSDIR}/mail/py-notmuch \
 		${PYTHON_PKGNAMEPREFIX}magic>0:${PORTSDIR}/devel/py-magic \
 		${PYTHON_PKGNAMEPREFIX}configobj>=4.7.0:${PORTSDIR}/devel/py-configobj \
 		${PYTHON_PKGNAMEPREFIX}pyme>=0.2:${PORTSDIR}/security/py-pyme
-
-USE_GITHUB=	yes
-GH_ACCOUNT=	pazz
 
 USES=		python:2
 USE_PYTHON=	autoplist distutils
