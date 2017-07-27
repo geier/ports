@@ -1,0 +1,29 @@
+--- CMakeLists.txt.orig	2017-07-22 19:31:10 UTC
++++ CMakeLists.txt
+@@ -24,7 +24,7 @@ ExternalProject_Add(taglib
+     INSTALL_COMMAND make install
+ )
+ 
+-set(CMAKE_CXX_FLAGS ${CMAKE_CXX_FLAGS} "-std=c++14 -Wno-unused-result -Wno-deprecated-declarations")
++set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14 -Wno-unused-result -Wno-deprecated-declarations")
+ set(CMAKE_CXX_FLAGS_DEBUG "${CMAKE_CXX_FLAGS_DEBUG} -g")
+ set(CMAKE_CXX_FLAGS_RELEASE "${CMAKE_CXX_FLAGS_RELEASE} -O2")
+ 
+@@ -61,7 +61,7 @@ link_directories (
+ set (musikcube_LINK_LIBS
+   ${linux_LINK_LIBS}
+   ${BOOST_LINK_LIBS}
+-  dl
++  #  dl
+   curl
+ )
+ 
+@@ -74,7 +74,7 @@ include_directories (
+ )
+ 
+ # "/usr/local" doesn't seem to be included by default on macOS 10.12+
+-if (CMAKE_SYSTEM_NAME MATCHES "Darwin")
++if (CMAKE_SYSTEM_NAME MATCHES "(Darwin|FreeBSD)")
+   link_directories ("/usr/local/lib")
+   include_directories("/usr/local/include")
+ endif ()
