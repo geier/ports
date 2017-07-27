@@ -12,7 +12,10 @@ MASTER_SITES=	https://github.com/clangen/musikcube/archive/
 WRKSRC=		${WRKDIR}/${PORTNAME}-${PORTVERSION}
 
 USES=		cmake ncurses compiler:c++14-lang pkgconfig
-USES_GCC=	any
+USE_GCC=	6+
+
+CPPFLAGS+=	-I${NCURSESINC}
+LDFLAGS+=	-L${NCURSESLIB} -lncursesw
 
 
 .include <bsd.port.mk>
