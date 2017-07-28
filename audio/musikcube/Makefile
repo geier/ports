@@ -17,5 +17,8 @@ USE_GCC=	6+
 CPPFLAGS+=	-I${NCURSESINC}
 LDFLAGS+=	-L${NCURSESLIB} -lncursesw
 
+DEPENDS=	audio/lame\
+		www/libmicrohttpd
+
 
 .include <bsd.port.mk>
